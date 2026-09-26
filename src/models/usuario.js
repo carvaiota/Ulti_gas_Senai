@@ -3,7 +3,7 @@ class usuario {
   #idusuario;
   #email;
 
-  constructor(senha_hash, idusuario, email) {
+  constructor(idusuario,senha_hash, email) {
    // validacao do email, caso nao pissua o @, de erro
     if (!email || !email.includes("@")) {
       throw new Error("email invalido");
